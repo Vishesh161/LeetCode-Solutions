@@ -1,0 +1,12 @@
+class Solution(object):
+    def smallestPalindrome(self, s):
+        """
+        :type s: str
+        :rtype: str
+        """
+        from collections import Counter
+        char_frequencies = Counter(s)
+        left = ""
+        for ch in sorted(char_frequencies):
+            left+= ch*(char_frequencies[ch]//2)
+
