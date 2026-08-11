@@ -1,0 +1,12 @@
+
+                    return num[:i] + str(bigger) + suffix
+
+        # --------------------------------------------------
+        # 6. No answer of same length.
+        #    Use one extra digit.
+        # --------------------------------------------------
+
+        required = min_string(need)
+
+        return '1' * (n + 1 - len(required)) + required
+
