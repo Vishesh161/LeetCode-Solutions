@@ -1,0 +1,12 @@
+            for nei in graph[node]:
+                if not suspicious[nei]:
+                    suspicious[nei] = True
+                    q.append(nei)
+
+        # Check incoming edge from outside
+        for u, v in invocations:
+            if not suspicious[u] and suspicious[v]:
+                return list(range(n))
+
+        return [i for i in range(n) if not suspicious[i]] 
+
