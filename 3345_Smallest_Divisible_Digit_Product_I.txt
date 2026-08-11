@@ -1,0 +1,11 @@
+class Solution:
+    def smallestNumber(self, n: int, t: int) -> int:
+        for i in range(n,n+t):
+            if i<10 and i%t==0:
+                return i
+            elif i>9:
+                p=(i//10)*(i%10)
+                if p%t == 0:
+                    return i
+                
+
