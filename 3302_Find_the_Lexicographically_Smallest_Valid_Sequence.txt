@@ -1,0 +1,12 @@
+                j += 1
+
+            # Case 2: use our one allowed mismatch
+            elif canSkip and (
+                j == m - 1 or i < last[j + 1]
+            ):
+                canSkip = False
+                ans.append(i)
+                j += 1
+
+        return ans if j == m else []
+
