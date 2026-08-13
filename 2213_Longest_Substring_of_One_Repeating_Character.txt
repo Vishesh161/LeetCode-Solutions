@@ -1,0 +1,13 @@
+                ]
+                return
+
+            mid = (left + right) // 2
+
+            build(node * 2, left, mid)
+            build(node * 2 + 1, mid + 1, right)
+
+            tree[node] = merge(
+                tree[node * 2],
+                tree[node * 2 + 1]
+            )
+
