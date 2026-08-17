@@ -1,13 +1,12 @@
-                ]
-                return
+        def merge(a, b):
 
-            mid = (left + right) // 2
+        tree = [None] * (4 * n)
 
-            build(node * 2, left, mid)
-            build(node * 2 + 1, mid + 1, right)
+        #         prefix, suffix, best]
+        # node = [first_char, last_char, length,
 
-            tree[node] = merge(
-                tree[node * 2],
-                tree[node * 2 + 1]
-            )
+        n = len(s)
+
+    def longestRepeating(self, s, queryCharacters, queryIndices):
+class Solution:
 
