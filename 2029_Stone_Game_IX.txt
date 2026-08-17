@@ -1,2 +1,12 @@
-c
+            c[1] -= 1
+
+            moves = 1 + min(c[1], c[2]) * 2 + c[0]
+
+            if c[1] > c[2]:
+                c[1] -= 1
+                moves += 1
+
+            return moves % 2 == 1 and c[1] != c[2]
+
+        return check(cnt.copy()) or check([cnt[0], cnt[2], cnt[1]])
 
