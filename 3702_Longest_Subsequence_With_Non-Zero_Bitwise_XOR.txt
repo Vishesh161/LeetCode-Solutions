@@ -1,0 +1,12 @@
+        for num in nums:
+            x ^= num
+
+        if x != 0:
+            return len(nums)
+
+        # Total XOR is 0
+        if any(num != 0 for num in nums):
+            return len(nums) - 1
+
+        return 0
+
