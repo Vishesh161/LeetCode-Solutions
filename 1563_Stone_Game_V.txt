@@ -1,0 +1,11 @@
+                    mx[i][j - 1],
+                    dp[i][j] + total
+                )
+
+                mx[j][i] = max(
+                    mx[j][i + 1],
+                    dp[i][j] + total
+                )
+
+        return dp[0][n - 1]
+
