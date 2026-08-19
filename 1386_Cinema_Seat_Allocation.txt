@@ -1,0 +1,12 @@
+
+            else:
+                # Try middle: seats 4,5,6,7
+                middle = all(seat not in seats for seat in [4, 5, 6, 7])
+
+                if left or right or middle:
+                    groups = 1
+
+            ans += groups
+
+        return ans
+
