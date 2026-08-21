@@ -1,0 +1,12 @@
+                right = mid
+            else:
+                left = mid + 1
+
+        return left
+
+    def gcd(self, a, b):
+        while b:
+            a, b = b, a % b
+        return a
+        
+
