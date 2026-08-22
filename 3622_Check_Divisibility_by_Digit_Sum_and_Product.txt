@@ -1,0 +1,12 @@
+
+            digit_sum += digit
+            digit_product *= digit
+            digit = temp % 10
+        while temp > 0:
+
+        digit_product = 1
+        digit_sum = 0
+        temp = n
+    def checkDivisibility(self, n: int) -> bool:
+class Solution:
+
