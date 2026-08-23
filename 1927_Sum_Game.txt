@@ -1,0 +1,12 @@
+                right_sum += int(num[i])
+
+        # Bob can make the number of ? equal only if total ? is even
+        if (left_q + right_q) % 2 == 1:
+            return True
+
+        # Difference Bob must compensate
+        diff = left_sum - right_sum
+
+        # If Alice and Bob can balance the sums, Bob wins
+        return diff != (right_q - left_q) * 9 // 2
+
