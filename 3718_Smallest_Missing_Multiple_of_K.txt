@@ -1,0 +1,10 @@
+            else:
+                q=max(n+1,q)
+        for j in range(0,q+1):
+            newK.append(k*(j+1))
+        for i in range (0,len(newK)):
+            if newK[i] in nums:
+                found=True
+            else:
+                return newK[i]
+
