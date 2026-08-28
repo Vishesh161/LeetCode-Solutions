@@ -1,0 +1,12 @@
+
+                current = s[left:right + 1]
+                length = len(current)
+
+                if length < min_len:
+                    min_len = length
+                    answer = current
+                elif length == min_len and current < answer:
+                    answer = current
+
+        return answer
+
