@@ -1,0 +1,12 @@
+        count = best_count
+        count[best_char] -= 1
+
+        ans = list(target[:best_pos])
+        ans.append(best_char)
+
+        # Make the remaining part lexicographically smallest
+        for c in sorted(count):
+            ans.extend([c] * count[c])
+
+        return "".join(ans)
+
