@@ -1,0 +1,12 @@
+        arr = sorted((nums[i], i) for i in range(n))
+
+        ans = nums[:]
+
+
+        # (value, original index)
+    def lexicographicallySmallestArray(self, nums: List[int], limit: int) -> List[int]:
+        n = len(nums)
+
+class Solution:
+from typing import List
+
