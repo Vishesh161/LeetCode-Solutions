@@ -1,0 +1,12 @@
+
+        for r in range(m):
+            for c in range(n):
+        litter = {}
+        start = None
+        m, n = len(classroom), len(classroom[0])
+
+
+class Solution:
+    def minMoves(self, classroom: List[str], energy: int) -> int:
+from collections import deque
+
