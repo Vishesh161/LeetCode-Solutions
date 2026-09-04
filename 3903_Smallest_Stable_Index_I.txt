@@ -1,0 +1,12 @@
+            if i!=0:
+                num2.remove(nums[i-1])
+        for i in range (0,n):
+            num1.append(nums[i])
+        stab = []
+        nev = []
+        num1 = []
+        num2 = nums.copy()
+        n = len(nums)
+    def firstStableIndex(self, nums: list[int], k: int) -> int:
+class Solution:
+
