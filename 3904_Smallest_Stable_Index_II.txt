@@ -1,0 +1,12 @@
+
+        # Find first stable index
+        prefix_max = nums[0]
+
+        for i in range(n):
+
+            prefix_max = max(prefix_max, nums[i])
+            if prefix_max - suffix[i] <= k:
+                return i
+
+        return -1
+
