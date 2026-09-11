@@ -1,0 +1,8 @@
+                    if k==i or k==j:
+                        continue
+                    if digits[k]==0:
+                        continue
+                    num = digits[k]*100 + digits[j]*10 + digits[i]
+                    ans.add(num)
+        return len(ans)
+
