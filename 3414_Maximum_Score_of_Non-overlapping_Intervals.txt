@@ -1,0 +1,8 @@
+            if take[0] < skip[0]:
+                return skip
+
+            return min(take, skip)
+
+        # IMPORTANT: return only the indices
+        return list(dp(0, 4)[1])
+
