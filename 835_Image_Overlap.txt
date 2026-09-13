@@ -1,0 +1,12 @@
+            for r2, c2 in ones2:
+
+                dr = r2 - r1
+                dc = c2 - c1
+
+                shift = (dr, dc)
+
+                count[shift] = count.get(shift, 0) + 1
+
+        # Maximum number of matching shifts
+        return max(count.values(), default=0)
+
