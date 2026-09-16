@@ -1,0 +1,12 @@
+
+        fact = [1] * (N + 1)
+
+        # factorials
+        R = 2 * k
+        N = n + k - 1
+        MOD = 10**9 + 7
+
+    def numberOfSets(self, n: int, k: int) -> int:
+
+class Solution:
+
