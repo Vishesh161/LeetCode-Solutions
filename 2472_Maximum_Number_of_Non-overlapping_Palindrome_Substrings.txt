@@ -1,0 +1,12 @@
+class Solution:
+    def maxPalindromes(self, s: str, k: int) -> int:
+
+        n = len(s)
+
+        # pal[i][j] = True if s[i...j] is a palindrome
+        pal = [[False] * n for _ in range(n)]
+
+        # Every single character is a palindrome
+        for i in range(n):
+            pal[i][i] = True
+
