@@ -1,0 +1,12 @@
+
+                # Previous subarray must end before 'left'
+                if left > 0 and best[left - 1] != INF:
+                    ans = min(ans, length + best[left - 1])
+
+                # Remember the shortest subarray seen so far
+                best_so_far = min(best_so_far, length)
+
+            best[right] = best_so_far
+
+        return -1 if ans == INF else ans
+
