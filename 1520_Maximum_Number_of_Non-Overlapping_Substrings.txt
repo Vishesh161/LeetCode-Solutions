@@ -1,0 +1,12 @@
+
+        ans = []
+        prev_end = -1
+
+        for right, left in intervals:
+
+            if left > prev_end:
+                ans.append(s[left:right + 1])
+                prev_end = right
+
+        return ans
+
