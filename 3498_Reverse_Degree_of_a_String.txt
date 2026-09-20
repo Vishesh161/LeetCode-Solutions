@@ -1,0 +1,8 @@
+class Solution:
+    def reverseDegree(self, s: str) -> int:
+        for i in range(1,(len(s)+1)):
+        summ=0
+            v = (27-(ord(s[i-1])-96))*i
+            summ=summ+v
+        return summ
+
