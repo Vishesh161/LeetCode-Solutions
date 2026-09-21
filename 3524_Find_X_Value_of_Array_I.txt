@@ -1,0 +1,12 @@
+            for r in range(k):
+                new_r = (r * num_mod) % k
+                new_dp[new_r] += dp[r]
+
+            # Add current subarrays to final answer
+            for r in range(k):
+                ans[r] += new_dp[r]
+
+            dp = new_dp
+
+        return ans
+
